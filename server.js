@@ -35,11 +35,12 @@ app.engine('.hbs', exphbs.engine({
                 '><a class="nav-link" href="' + url + '">' + options.fn(this) + '</a></li>';
         },
         eq: function (lvalue, rvalue, options) {
-            // Helper function for conditionally rendering content if two values are equal
-            if (lvalue === rvalue) {
-                return options.fn(this);  // Renders the block if values are equal
+            if (arguments.length < 3)
+                throw new Error("Handlebars Helper equal needs 2 parameters");
+            if (lvalue != rvalue) {
+                return options.inverse(this);
             } else {
-                return options.inverse(this);  // Renders the {{else}} block if values are not equal
+                return options.fn(this);
             }
         }
     }
