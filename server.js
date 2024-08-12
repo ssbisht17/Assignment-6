@@ -6,7 +6,7 @@
 *  
 *	Name: Sachin Singh Bisht Student ID: 147996235 Date: Aug 11,2024 
 * 
-*	Published URL: ___________________________________________________________ 
+*	Published URL: https://assignment-6-nine-rho.vercel.app/ 
 * 
 ********************************************************************************/
 
