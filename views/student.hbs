@@ -72,7 +72,7 @@
                         <div class="col-md-6">
                             <div class="form-group">
                                 <label for="isTA">TA:</label>
-                                <input type="checkbox" id="isTA" name="isTA" {{#if student.TA}}checked{{/if}} />
+                                <input type="checkbox" id="isTA" name="isTA" {{#if viewData.student.TA}}checked{{/if}} />
                                 <label for="isTA">Teaching Assistant</label>
                             </div>
                         </div>
@@ -82,12 +82,12 @@
                                 <div>
                                     <label>
                                         <input type="radio" name="status" value="Full Time" {{#if (eq
-                                            student.status "Full Time" )}}checked{{/if}} />
+                                            viewData.student.status "Full Time" )}}checked{{/if}} />
                                         Full Time
                                     </label>
                                     <label>
                                         <input type="radio" name="status" value="Part Time" {{#if (eq
-                                            student.status "Part Time" )}}checked{{/if}} />
+                                            viewData.student.status "Part Time" )}}checked{{/if}} />
                                         Part Time
                                     </label>
                                 </div>
